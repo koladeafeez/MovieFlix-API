@@ -4,11 +4,11 @@ const bodyParser = require('body-parser');
 const debug = require('debug')('app')
 const ejs = require('ejs');
 
-const adminRoute = require('./routes/adminRoute');
+// const adminRoute = require('../adminRoute');
 const moviesRoute = require('./routes/moviesRoute');
 const app = express();
 
-const port = process.env.POR || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -28,7 +28,7 @@ var originsWhitelist = [
   app.use(cors(corsOptions));
 
 
-app.use('/admin/movies', adminRoute);
+// app.use('/admin/movies', adminRoute);
 app.use('/api/movies', moviesRoute );
 
 app.set('view engine', ejs)
