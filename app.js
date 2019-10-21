@@ -38,5 +38,5 @@ app.get('/',(req, res)=>{
 })
 
 app.listen(port,() => {
-    debug('server running at port 3000')
+    debug("server running at port"+ port)
 })
