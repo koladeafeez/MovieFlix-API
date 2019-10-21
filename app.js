@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const debug = require('debug')('app')
 const ejs = require('ejs');
 
-// const adminRoute = require('../adminRoute');
+ const adminRoute = require('../adminRoute');
 const moviesRoute = require('./routes/moviesRoute');
 const app = express();
 
@@ -28,7 +28,7 @@ var originsWhitelist = [
   app.use(cors(corsOptions));
 
 
-// app.use('/admin/movies', adminRoute);
+ app.use('/admin/movies', adminRoute);
 app.use('/api/movies', moviesRoute );
 
 app.set('view engine', ejs)
