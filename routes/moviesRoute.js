@@ -7,7 +7,7 @@ const moviesRoute = express.Router();
 
 moviesRoute.route('/')
 .get((req, res) => {
-    const url = process.env.MONGODB_URL || 'mongodb://localhost:27017/movieApp'
+    const url = process.env.MONGODB_URL || 'mongodb://localhost:27017'
     const dbName = 'moviesApp';
     (async function mongo(){
         let client;
