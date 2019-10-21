@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 var originsWhitelist = [
     'http://localhost:4200',      //this is my front-end url for development
-     'http://www.myproductionurl.com'
+     'https://nostalgic-jepsen-8d6aeb.netlify.com'
   ];
   var corsOptions = {
     origin: function(origin, callback){
