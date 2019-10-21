@@ -8,6 +8,8 @@ const adminRoute = require('./routes/adminRoute');
 const moviesRoute = require('./routes/moviesRoute');
 const app = express();
 
+const port = process.env.POR || 3000;
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -35,6 +37,6 @@ app.get('/',(req, res)=>{
  res.send('route for movies')
 })
 
-app.listen(3000,() => {
+app.listen(port,() => {
     debug('server running at port 3000')
 })
