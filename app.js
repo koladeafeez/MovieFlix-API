@@ -35,59 +35,60 @@ app.use('/api/movies', moviesRoute );
 app.set('view engine', ejs)
 
 app.get('/',(req, res)=>{
-//  res.send('route for movies')
-
-const url = process.env.MONGODB_URL || 'mongodb://localhost:27017'
-const dbName = 'moviesApp';
-(async function mongo(){
-    let client;
-    try{
-        client = await MongoClient.connect(url);
-        debug('connected with server successfully')
-
-        const db = client.db(dbName);
-
-        const col = await db.collection('movies');
-
-        const movies = col.find().toArray()
-        .then( resolve=> res.json( resolve) )
-
-    
-        // res.json(movies);
-    }catch(error){
-        debug(error.stack);
-
-    }
-    client.close(); 
-}())
+ res.send('route for movies')
 })
 
+// const url = process.env.MONGODB_URL || 'mongodb://localhost:27017'
+// const dbName = 'moviesApp';
+// (async function mongo(){
+//     let client;
+//     try{
+//         client = await MongoClient.connect(url);
+//         debug('connected with server successfully')
 
-app.get(('/:id') ,(req, res) => {
-const { id } = req.params;
-const url = 'mongodb://localhost:27017'
-const dbName = 'moviesApp';
-(async function mongo(){
-    let client;
-    try{
-        client = await MongoClient.connect(url);
-        debug('connected with server successfully')
+//         const db = client.db(dbName);
 
-        const db = client.db(dbName);
+//         const col = await db.collection('movies');
 
-        const col = await db.collection('movies');
+//         const movies = col.find().toArray()
+//         .then( resolve=> res.json( resolve) )
 
-        const movie = await col.findOne({ _id: new ObjectID(id)});
-        //  .then( resolve=> res.json( resolve) )
     
-         res.json(movie);
-    }catch(error){
-        debug(error.stack);
+//         // res.json(movies);
+//     }catch(error){
+//         debug(error.stack);
 
-    }
-    client.close(); 
-}())
-})
+//     }
+//     client.close(); 
+// }())
+// })
+
+
+// app.get(('/:id') ,(req, res) => {
+// const { id } = req.params;
+// const url = 'mongodb://localhost:27017'
+// const dbName = 'moviesApp';
+// (async function mongo(){
+//     let client;
+//     try{
+//         client = await MongoClient.connect(url);
+//         debug('connected with server successfully')
+
+//         const db = client.db(dbName);
+
+//         const col = await db.collection('movies');
+
+//         const movie = await col.findOne({ _id: new ObjectID(id)});
+//         //  .then( resolve=> res.json( resolve) )
+    
+//          res.json(movie);
+//     }catch(error){
+//         debug(error.stack);
+
+//     }
+//     client.close(); 
+// }())
+// })
 
 
 
