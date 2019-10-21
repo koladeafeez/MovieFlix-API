@@ -38,7 +38,7 @@ app.get('/',(req, res)=>{
 //  res.send('route for movies')
 
 const url = process.env.MONGODB_URI || 'mongodb://localhost:27017'
-const dbName = 'moviesApp';
+const dbName = 'heroku_mv9g6jmh';
 (async function mongo(){
     let client;
     try{
