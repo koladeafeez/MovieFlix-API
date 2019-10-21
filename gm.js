@@ -64,7 +64,18 @@
       },
         {
         title: "A Bug's Life",
-        releaseYear: "1998",
+        directedby: " John Lasseter",
+       written: ["  John Lasseter", "Andrew Stanton", "Pete Docter", "Joe Ranft"],
+        actor:[ "Dave Foley" ,
+          "Kevin Spacey", 
+          "Julia Louis-Dreyfus",
+          "Hayden Panettiere", 
+          "Phyllis Diller",
+          "Richard Kind",
+          "David Hyde",
+          "Joe Ranft" ],
+      runtime:"1h 35min",
+        releaseYear: "November 25, 1998",
         genre: [
         "Animation",
         "Adventure",
@@ -81,7 +92,20 @@
       },
         {
           title: "District 9",
-          releaseYear: "2009",
+          Directed: "Neill Blomkamp",
+         Written :	
+["Neill Blomkamp",
+"Terri Tatchell"],
+actor:	
+["Sharlto Copley",
+"Jason Cope",
+"David James",
+"Vanessa Haywood",
+"Mandla Gaduka",
+"Kenneth Nkosi"],
+
+          releaseYear: " 3 August 2009",
+          runtime:"1h 52min",
           genre: [
           "Action",
           "Sci-Fi",
@@ -98,13 +122,23 @@
         },
           {
           title: "Rush",
+          Directed: ["Ron Howard"],
+          Written :	["Peter Morgan"],
+actor:
+["Chris Hemsworth",
+"Daniel Brühl",
+"Olivia Wilde",
+"Alexandra Maria Lara",
+"Pierfrancesco Favino",
+"Natalie Dormer"],
+runtime: "2hr 3min ",
           rating: 8.3,
           genre: [
           "Animation",
           "Comedy",
           "Family"
           ],
-          releaseYear: "2013",
+          releaseYear: "September 2, 2013",
           image: {
           __type: "File",
           name: "43982238-a5d0-42ab-b12e-2459429bcdf6_9.jpg",
@@ -115,7 +149,19 @@
         },
           {
           title: "Life of Brian",
-          releaseYear: "1972",
+          Directed: ["Terry Jones"],
+          Written :	["Monty Python"],
+actor:
+[	
+"Graham Chapman",
+"John Cleese",
+"Terry Gilliam",
+"Eric Idle",
+"Terry Jones",
+"Michael Palin"],
+runtime: "1hr 33min ",
+
+          releaseYear: "17 August 1979",
           genre: [
           "Comedy"
           ],
@@ -130,6 +176,16 @@
         },
           {
             title: "Transformers: Age of Extinction",
+            
+            Directed: ["	Michael Bay"],
+            Written :	["	Ehren Kruger"],
+  actor:
+  [	
+  	
+  "Mark Wahlberg",
+  "Stanley Tucci"],
+  runtime: "2hr 25min ",
+
             rating: 6.3,
             genre: [
             "Action",
@@ -141,17 +197,29 @@
             name: "b2610bfc-c8b7-48e0-8577-15ed47952a26_3.jpg",
             url: "https://peruzal-parse-media.s3.amazonaws.com/b2610bfc-c8b7-48e0-8577-15ed47952a26_3.jpg"
             },
-            releaseYear: "2014",
+            releaseYear:"	June 19, 2014",
             description: "As humanity picks up the pieces, following the conclusion of 'Transformers: Dark of the Moon,' Autobots and Decepticons have all but vanished from the face of the planet. However, a group of powerful, ingenious businessman and scientists attempt to learn from past Transformer incursions and push the boundaries of technology beyond what they can control - all while an ancient, powerful Transformer menace sets Earth in his cross-hairs.",
             shortdescription: "As humanity picks up the pieces, following the conclusion of ..."  
           },
             {
             title: "The Machinist",
+            Directed: ["		Brad Anderson"],
+            Written :	["	Scott Kosar",	
+            "Christian Bale"],
+  actor:
+  [	
+  	
+    "Jennifer Jason Leigh",
+    "Aitana Sánchez-Gijón",
+    "John Sharian",
+    "Michael Ironside"],
+  runtime: "1hr 42min ",
+
             genre: [
             "Drama",
             "Thriller"
             ],
-            releaseYear: "2004",
+            releaseYear: "January 18,2004",
             rating: 6.8,
             image: {
             __type: "File",
@@ -163,7 +231,21 @@
           },
             {
             title: "The Last Samurai",
-            releaseYear: "2003",
+            Directed: ["Edward Zwick"],
+            Written :	["Marshall Herskovitz",
+            "Edward Zwick"],
+  actor:
+  [	
+  	
+"Tom Cruise",
+"Timothy Spall",
+"Ken Watanabe",
+"Billy Connolly",
+"Tony Goldwyn",
+"Hiroyuki Sanada"],
+  runtime: "2hr 34min ",
+  
+            releaseYear: "November 20, 2003",
             genre: [
             "Action",
             "Drama",
@@ -180,7 +262,22 @@
           },
             {
             title: "The Amazing Spider-Man 2",
-            releaseYear: "2014",
+            Directed: ["	Marc Webb"],
+            Written :	["Avi Arad"
+              ,"Matt Tolmach"],
+  actor:
+  [	
+    "Steve Ditko"	
+    ,"Andrew Garfield"
+    ,"Emma Stone",
+    "Jamie Foxx",
+    "Dane DeHaan"
+    ,"Campbell Scott",
+    "Embeth Davidtz",
+    "Colm Feore"],
+  runtime: "2hr 24min ",
+            releaseYear: 	
+            "April 18, 2014",
             genre: [
             "Action",
             "Adventure",
@@ -197,7 +294,17 @@
           },
             {
             title: "Tangled",
-            releaseYear: "2010",
+            Directed: [	
+            "Nathan Greno",
+            "Byron Howard"],
+            Written :	["Roy Conli"],
+  actor:
+  [	
+    "Mandy Moore",
+    "Zachary Levi",
+    "Donna Murphy"],
+  runtime: " 1hr 40min ",
+            releaseYear: "November 14, 2010",
             genre: [
             "Action",
             "Drama",
@@ -214,7 +321,19 @@
           },
             {
             title: "Drag Me to Hell",
-            releaseYear: "2009",
+            Directed: ["	Sam Raimi"],
+            Written :	["Sam Raimi",
+            "Ivan Raimi"],
+  actor:
+  [	
+  	
+"Alison Lohman",
+"Justin Long",
+"Lorna Raver",
+"Dileep Rao",
+"David Paymer"],
+  runtime: "1h 39min ",
+            releaseYear:"March 15, 2009",
             genre: [
             "Horror",
             "Thriller"
@@ -230,7 +349,18 @@
           },
             {
               title: "Kill Bill: Vol. 1",
-              releaseYear: "2003",
+              Directed: ["Quentin Tarantino"],
+            Written :	["Quentin Tarantino"],
+  actor:
+  [	
+"Uma Thurman",
+"Lucy Liu",
+"Vivica A. Fox",
+"Michael Madsen",
+"Daryl Hannah",
+"David Carradine"],
+  runtime: "1hr 51min ",
+              releaseYear: "October 10, 2003",
               genre: [
               "Action",
               "Crime"
@@ -246,6 +376,18 @@
             },
               {
               title: "How to Train Your Dragon",
+              Directed: ["Chris Sanders"],
+            Written :	["Bonnie Arnold"],
+  actor:
+  [	
+  	
+"Jay Baruchel",
+"Gerard Butler",
+"Craig Ferguson",
+"America Ferrera",
+"Jonah Hill",
+"Christopher Mintz-Plasse"],
+  runtime: "1hr 38min ",
               genre: [
               "Animation",
               "Adventure",
@@ -257,12 +399,24 @@
               name: "2e92274a-ea2b-4104-b700-3a01cd7c99ec_15.jpg",
               url: "https://peruzal-parse-media.s3.amazonaws.com/2e92274a-ea2b-4104-b700-3a01cd7c99ec_15.jpg"
               },
-              releaseYear: "2010",
+              releaseYear: "March 21, 2010",
               description: "As the son of a Viking leader on the cusp of manhood, shy Hiccup Horrendous Haddock III faces a rite of passage: he must kill a dragon to prove his warrior mettle. But after downing a feared dragon, he realizes that he no longer wants to destroy it, and instead befriends the beast – which he names Toothless – much to the chagrin of his warrior father",
              shortdescription: "As the son of a Viking leader on the cusp of manhood, shy Hiccup Horrendous Haddock III faces ..."  
             },
             {
               title: "Maleficent: Mistress of Evil (2019)",
+              Directed: ["Joachim Rønning"],
+            Written :	["Joe Roth",
+              "Angelina Jolie"],
+  actor:
+  [	"Angelina Jolie",
+"Elle Fanning",
+"Chiwetel Ejiofor",
+"Sam Riley",
+"Ed Skrein",
+"Imelda Staunton",
+"Juno Temple"],
+  runtime: "1 58min",
               genre: [
               "Animation",
               "Adventure",
@@ -274,7 +428,7 @@
               name: "2e92274a-ea2b-4104-b700-3a01cd7c99ec_15.jpg",
               url: "https://m.media-amazon.com/images/M/MV5BZjJiYTExOTAtNWU0Yi00NzJjLTkwOTgtOTU2NWM1ZjJmYWVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
               },
-              releaseYear: "2010",
+              releaseYear: "October 18, 2019",
               description: "Maleficent and her goddaughter Aurora begin to question the complex family ties that bind them as they are pulled in different directions by impending nuptials, unexpected allies, and dark new forces at play.",
              shortdescription: " Maleficent and her goddaughter Aurora begin to question the complex family..."  
             }
