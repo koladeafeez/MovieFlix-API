@@ -1,63 +1,58 @@
-const express = require('express');
-const debug = require('debug')('app:moviesRoute');
-const { MongoClient, ObjectID } = require('mongodb')
+const express = require("express");
+const debug = require("debug")("app:moviesRoute");
+const { MongoClient, ObjectID } = require("mongodb");
 
-const moviesRoute = express.Router();   
+const moviesRoute = express.Router();
 
+moviesRoute.route("/").get((req, res) => {
+  const url = process.env.MONGODB_URI || "mongodb://localhost:27017";
+  const dbName = "heroku_mv9g6jmh";
+  (async function mongo() {
+    let client;
+    try {
+      client = await MongoClient.connect(url);
+      debug("connected with server successfully");
 
-moviesRoute.route('/')
-.get((req, res) => {
-    const url = process.env.MONGODB_URI|| 'mongodb://localhost:27017'
-    const dbName = 'heroku_mv9g6jmh';
-    (async function mongo(){
-        let client;
-        try{
-            client = await MongoClient.connect(url);
-            debug('connected with server successfully')
+      const db = client.db(dbName);
 
-            const db = client.db(dbName);
+      const col = await db.collection("movies");
 
-            const col = await db.collection('movies');
+      const movies = col
+        .find()
+        .toArray()
+        .then((resolve) => res.json(resolve));
 
-            const movies = col.find().toArray()
-            .then( resolve=> res.json( resolve) )
+      // res.json(movies);
+    } catch (error) {
+      debug(error.stack);
+    }
+    client.close();
+  })();
+});
 
-        
-            // res.json(movies);
-        }catch(error){
-            debug(error.stack);
+moviesRoute.route("/:id").get((req, res) => {
+  const { id } = req.params;
+  const url = process.env.MONGODB_URI || "mongodb://localhost:27017";
+  const dbName = "heroku_mv9g6jmh";
+  (async function mongo() {
+    let client;
+    try {
+      client = await MongoClient.connect(url);
+      debug("connected with server successfully");
 
-        }
-        client.close(); 
-    }())
-})
+      const db = client.db(dbName);
 
-moviesRoute.route('/:id')
-.get((req, res) => {
-    const { id } = req.params;
-    const url = process.env.MONGODB_URI|| 'mongodb://localhost:27017'
-    const dbName = 'heroku_mv9g6jmh';
-    (async function mongo(){
-        let client;
-        try{
-            client = await MongoClient.connect(url);
-            debug('connected with server successfully')
+      const col = await db.collection("movies");
 
-            const db = client.db(dbName);
+      const movie = await col.findOne({ _id: new ObjectID(id) });
+      //  .then( resolve=> res.json( resolve) )
 
-            const col = await db.collection('movies');
-
-            const movie = await col.findOne({ _id: new ObjectID(id)});
-            //  .then( resolve=> res.json( resolve) )
-        
-             res.json(movie);
-        }catch(error){
-            debug(error.stack);
-
-        }
-        client.close(); 
-    }())
-})
-
+      res.json(movie);
+    } catch (error) {
+      debug(error.stack);
+    }
+    client.close();
+  })();
+});
 
 module.exports = moviesRoute;
